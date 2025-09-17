@@ -16,7 +16,32 @@ Este é um template modular e escalável para criação de APIs RESTful usando F
 
 - .env — Gerenciamento de variáveis de ambiente com python-dotenv
 
-
+### 📂 Estrutura do projeto
+```
+fastapi-template/
+   ├── v1/                    # Rotas da API
+   │   ├── api.py
+   │   └── endpoints/
+   │       ├── artigo.py
+   │       └── usuario.py
+   ├── core/                   # Configurações e segurança
+   │   ├── auth.py
+   │   ├── configa.py
+   │   ├── database.py
+   │   ├── deps.py
+   │   └── security.py
+   ├── models/                 # Modelos do banco de dados (SQLAlchemy)
+   ├── schemas/                # Modelos de dados (Pydantic)
+   ├── database/               # Conexão e sessão do banco
+   ├── schemas/                # Migrações do banco
+.gitignore
+ requirements.txt
+ Dockerfile
+ docker-compose.yml
+ README.md
+ main.py
+```
+ 
 ### 📋 Pré-requisitos
 
 Python 3.10.x, pip, Docker e Docker Compose
