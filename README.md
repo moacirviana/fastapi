@@ -26,7 +26,7 @@ fastapi-template/
    │       └── usuario.py
    ├── core/                   # Configurações e segurança
    │   ├── auth.py
-   │   ├── configa.py
+   │   ├── config.py
    │   ├── database.py
    │   ├── deps.py
    │   └── security.py
